@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-center mt-6">Money Master</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto my-6">
+            <div>
+                <img src="images/money-management.jpg" alt="">
+            </div>
+            <div class="bg-slate-100 text-center py-6">
+                <h4 class="text-lg font-bold">Income</h4>
+                <div class="my-3">
+                    <p class="inline pr-2">Income:</p>
+                    <input type="text" style="background-color:#DCDCDC;" class="py-1 px-2" id="income-field">
+                </div>
+                <h4 class="text-lg font-bold">Expenses</h4>
+                <div class="my-3">
+                    <p class="inline pr-2">Food:</p>
+                    <input type="text" style="background-color:#DCDCDC;" class="py-1 px-2" id="food-field">
+                </div>
+                <div class="my-3">
+                    <p class="inline pr-2">Rent:</p>
+                    <input type="text" style="background-color:#DCDCDC;" class="py-1 px-2" id="rent-field">
+                </div>
+                <div class="my-3">
+                    <p class="inline pr-2">Clothes:</p>
+                    <input type="text" style="background-color:#DCDCDC;" class="py-1 px-2" id="clothes-field">
+                </div>
+                <button class="bg-blue-400 text-white font-medium py-2 px-8 rounded-md" id="calculate-btn">Calculate</button>
+
+                <h4 class="text-lg font-medium my-3">Total Expenses: <span id="total-expenses">00</span></h4>
+                <h4 class="text-lg font-medium my-3">Balance: <span id="balance-field">00</span></h4>
+
+                <div class="mt-12 mb-6">
+                    <p class="inline pr-2">Save:</p>
+                    <input type="text" style="background-color:#DCDCDC;" class="py-2 px-2 w-20" id="percentage-field">
+                    <p class="inline px-4">%</p>
+                    <button class="bg-blue-400 py-2 px-8 rounded-md text-white font-medium" id="save-btn">Save</button>
+                </div>
+
+                <h4 class="text-lg font-medium my-3">Saving Amount: <span id="savings-amount">00</span></h4>
+                <h4 class="text-lg font-medium my-3">Remaining Balance: <span id="r-balance">00</span></h4>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
